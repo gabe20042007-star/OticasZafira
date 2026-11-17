@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f3">
+  <meta name="description" content="Óticas Zafira em Sorocaba: estilo, qualidade e preço justo. Agende seu exame de vista gratuito pelo WhatsApp.">
+  <title>Óticas Zafira — Estilo e precisão para o seu olhar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.13.0/lottie.min.js"></script>
+  <style>
+    /* Contract: Sorocaba residents need a nearby optician and a simple WhatsApp booking. The category default is a photo-led eyewear landing page; Zafira's own angle pairs that editorial look with a free exam, local trust and in-person choice. */
+    :root {
+      color-scheme: light;
+      --navy: #102641;
+      --navy-deep: #0b1d33;
+      --sapphire: #1767d2;
+      --paper: #f8f7f3;
+      --warm: #eeeae1;
+      --white: #fff;
+      --ink: #1c2938;
+      --muted: #596575;
+      --line: #deded9;
+      --header-h: 82px;
+      --serif: "DM Serif Display", Georgia, serif;
+      --sans: "Manrope", sans-serif;
+      --script: "Allura", cursive;
+      --radius: 2px;
+      --content: 1320px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); font-size: 16px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+    body, button, a { -webkit-tap-highlight-color: transparent; }
+    a { color: inherit; text-decoration: none; }
+    button { color: inherit; font: inherit; }
+    img, svg { display: block; max-width: 100%; }
+    :focus-visible { outline: 3px solid var(--sapphire); outline-offset: 4px; }
+    .skip-link { position: fixed; z-index: 100; left: 12px; top: 12px; transform: translateY(-160%); padding: 12px 16px; background: var(--white); color: var(--navy); }
+    .skip-link:focus { transform: translateY(0); }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    [id] { scroll-margin-top: 18px; }
+    .wrap { width: min(calc(100% - 64px), var(--content)); margin-inline: auto; }
+    .eyebrow { display: flex; align-items: center; gap: 10px; margin: 0 0 16px; color: var(--sapphire); font-size: 11px; font-weight: 700; letter-spacing: .18em; line-height: 1.3; text-transform: uppercase; }
+    .eyebrow::before { width: 22px; height: 1px; background: currentColor; content: ""; }
+    .section-title { max-width: 720px; margin: 0; color: var(--navy); font: 400 clamp(38px, 5vw, 68px)/1.04 var(--serif); letter-spacing: -.025em; text-wrap: balance; }
+    .section-intro { max-width: 570px; margin: 18px 0 0; color: var(--muted); font-size: 15px; line-height: 1.75; }
+    .button { display: inline-flex; min-height: 52px; align-items: center; justify-content: center; gap: 12px; padding: 0 22px; border: 1px solid transparent; border-radius: var(--radius); background: var(--sapphire); color: var(--white); font-size: 12px; font-weight: 700; letter-spacing: .055em; text-align: center; transition: background-color .2s ease, color .2s ease, transform .2s ease, border-color .2s ease; }
+    .button:hover { transform: translateY(-2px); background: #0e53b1; }
+    .button svg { width: 18px; height: 18px; flex: none; }
+    .button-outline { border-color: rgba(255,255,255,.75); background: transparent; color: var(--white); }
+    .button-outline:hover { border-color: var(--white); background: var(--white); color: var(--navy); }
+    .button-light { background: var(--white); color: var(--navy); }
+    .button-light:hover { background: #e9f1fc; }
+
+    /* A slim service notice and a quiet, centered wordmark keep the reference's editorial header. */
+    .notice { display: flex; min-height: 32px; align-items: center; justify-content: center; gap: 18px; padding: 5px 20px; background: var(--navy-deep); color: #f6f7f8; font-size: 10px; font-weight: 600; letter-spacing: .1em; text-align: center; text-transform: uppercase; }
+    .notice .dot { width: 3px; height: 3px; border-radius: 50%; background: #74a9f0; }
+    .site-header { position: relative; z-index: 20; background: rgba(255,255,255,.97); }
+    .header-main { display: grid; min-height: var(--header-h); grid-template-columns: 1fr auto 1fr; align-items: center; gap: 22px; padding: 0 4.2%; border-bottom: 1px solid #eeede8; }
+    .header-nav { display: flex; align-items: center; gap: clamp(14px, 2.1vw, 34px); }
+    .header-nav a { position: relative; display: flex; min-height: 44px; align-items: center; padding-block: 10px; color: #4c5662; font-size: 11px; font-weight: 600; letter-spacing: .025em; white-space: nowrap; }
+    .header-nav a::after { position: absolute; right: 0; bottom: 4px; left: 0; height: 1px; transform: scaleX(0); transform-origin: left; background: var(--sapphire); content: ""; transition: transform .2s ease; }
+    .header-nav a:hover::after { transform: scaleX(1); }
+    .brand { display: inline-flex; min-width: 124px; align-items: center; justify-content: center; gap: 7px; color: var(--navy); text-align: center; }
+    .brand-mark { width: 34px; height: 27px; flex: none; }
+    .brand-copy { display: grid; align-items: center; line-height: .8; }
+    .brand-overline { padding-left: .37em; font-size: 8px; font-weight: 700; letter-spacing: .36em; }
+    .brand-name { margin-top: -1px; color: var(--navy); font: 34px/.82 var(--script); }
+    .header-action { display: flex; justify-content: flex-end; }
+    .header-action .button { min-height: 44px; padding-inline: 16px; font-size: 12px; }
+    .mobile-nav { display: none; }
+
+    /* Hero: a real portrait image carries the same editorial weight as the supplied reference. */
+    /* Sapphire glints and restrained photo scrims support lens reflections and text contrast; there is no decorative multicolor gradient. */
+    .hero { position: relative; display: grid; min-height: min(620px, 65vw); min-height: clamp(500px, 53vw, 680px); align-items: center; overflow: hidden; background: var(--warm); color: var(--white); isolation: isolate; }
+    .hero-photo { position: absolute; z-index: -2; inset: 0 0 0 auto; width: min(58%, 680px); height: 100%; object-fit: contain; object-position: right center; }
+    .hero::before { position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, rgba(8,25,43,.62) 0%, rgba(8,25,43,.27) 42%, rgba(8,25,43,.04) 100%); content: ""; }
+    .hero-copy { width: min(calc(100% - 64px), var(--content)); margin: 0 auto; padding: 50px 0 60px; }
+    .hero-copy-inner { width: min(660px, 58%); }
+    .hero .eyebrow { color: #d7e7ff; }
+    .hero h1 { max-width: 660px; margin: 0; font: 400 clamp(52px, 7vw, 96px)/.94 var(--serif); letter-spacing: -.035em; text-wrap: balance; }
+    .hero h1 em { color: #dceaff; font-weight: 400; }
+    .hero-lead { max-width: 430px; margin: 20px 0 27px; color: rgba(255,255,255,.91); font-size: 14px; line-height: 1.75; }
+    .hero-meta { display: flex; align-items: center; gap: 12px; margin-top: 25px; color: rgba(255,255,255,.94); font-size: 11px; }
+    .hero-meta .stars { color: #d8e7ff; letter-spacing: .15em; }
+    .hero-meta .separator { width: 1px; height: 16px; background: rgba(255,255,255,.45); }
+    .hero-caption { position: absolute; right: 4.2%; bottom: 18px; color: rgba(255,255,255,.83); font-size: 9px; letter-spacing: .06em; }
+    .hero-caption a { display: inline-flex; min-height: 44px; align-items: center; padding-inline: 5px; text-decoration: underline; text-underline-offset: 3px; }
+
+    /* Two wide editorial callouts echo the reference's paired offer bands. */
+    .promo-band { display: grid; grid-template-columns: 1fr 1fr; }
+    .promo { position: relative; display: flex; min-height: 176px; align-items: center; justify-content: center; gap: clamp(20px, 4vw, 66px); overflow: hidden; padding: 24px 32px; }
+    .promo:first-child { background: #eee9df; }
+    .promo:last-child { background: #e8edf3; }
+    .promo-art { width: clamp(112px, 18vw, 215px); flex: none; color: var(--navy); }
+    .promo:last-child .promo-art { color: var(--navy); }
+    .promo-copy { max-width: 300px; }
+    .promo-copy .eyebrow { margin-bottom: 8px; font-size: 9px; }
+    .promo-copy h2 { margin: 0; color: var(--navy); font: 400 clamp(25px, 2.5vw, 36px)/1.05 var(--serif); text-wrap: balance; }
+    .promo-copy p { margin: 8px 0 12px; color: #586270; font-size: 12px; line-height: 1.55; }
+    .text-link { display: inline-flex; min-height: 44px; align-items: center; gap: 8px; color: var(--navy); font-size: 10px; font-weight: 700; text-decoration: underline; text-decoration-color: #8ba9cc; text-underline-offset: 4px; }
+    .text-link svg { width: 15px; height: 15px; }
+
+    /* Scroll runway is the collection browser; one progress value advances every frame. */
+    .runway { position: relative; height: 238svh; background: var(--paper); }
+    .runway-sticky { position: sticky; top: 0; display: grid; height: 100svh; min-height: 560px; align-items: center; overflow: hidden; }
+    .runway-sticky::before { position: absolute; inset: 0; background: radial-gradient(ellipse at 76% 54%, #e8eef4 0%, rgba(232,238,244,.25) 27%, transparent 54%); content: ""; pointer-events: none; }
+    .runway-header { position: absolute; z-index: 5; top: clamp(42px, 8vh, 94px); left: max(32px, calc((100vw - var(--content))/2)); width: min(440px, 40vw); }
+    .runway-header .section-title { font-size: clamp(38px, 4.7vw, 64px); }
+    .runway-header .section-intro { max-width: 370px; font-size: 13px; }
+    .runway-art { position: absolute; inset: 0; overflow: hidden; perspective: 1200px; }
+    .runway-art::before { position: absolute; right: 4%; bottom: 18%; width: 58%; height: 9%; border-radius: 50%; background: radial-gradient(ellipse, rgba(56,76,101,.12), transparent 70%); content: ""; filter: blur(10px); }
+    .runway-rule { position: absolute; right: 4.2%; bottom: 22%; left: 42%; height: 1px; background: linear-gradient(90deg, transparent, rgba(31,76,129,.24) 28%, rgba(31,76,129,.12)); }
+    .runway-rule::before, .runway-rule::after { position: absolute; top: -7px; width: 1px; height: 14px; background: rgba(31,76,129,.28); content: ""; }
+    .runway-rule::before { left: 0; }
+    .runway-rule::after { right: 0; }
+    .frame-model { position: absolute; top: 0; left: 0; width: min(56vw, 780px); transform-origin: 50% 50%; will-change: transform, opacity, filter; }
+    .frame-model svg { overflow: visible; width: 100%; height: auto; filter: drop-shadow(0 20px 17px rgba(22,45,73,.14)); }
+    .runway-tag { position: absolute; z-index: 4; right: max(32px, calc((100vw - var(--content))/2)); bottom: 11%; display: flex; align-items: center; gap: 13px; color: var(--navy); }
+    .runway-tag-number { color: var(--sapphire); font-size: 11px; font-variant-numeric: tabular-nums; letter-spacing: .11em; }
+    .runway-tag-name { min-width: 130px; font: 24px/1 var(--serif); }
+    .runway-tag-rule { width: 36px; height: 1px; background: var(--sapphire); }
+    .runway-hint { position: absolute; z-index: 4; bottom: 5%; left: max(32px, calc((100vw - var(--content))/2)); display: flex; align-items: center; gap: 11px; color: #5c6775; font-size: 9px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+    .runway-hint svg { width: 16px; height: 16px; color: var(--sapphire); }
+    .runway-progress { position: absolute; right: 4.2%; bottom: 5.8%; left: 42%; height: 2px; background: #d9e0e8; }
+    .runway-progress span { display: block; width: 0; height: 100%; transform-origin: left; background: var(--sapphire); }
+    .frame-model svg .lens { stroke: currentColor; stroke-width: 12; stroke-linejoin: round; }
+    .frame-model svg .wire { fill: none; stroke: currentColor; stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; }
+    .frame-model svg .bridge { fill: none; stroke: currentColor; stroke-width: 10; stroke-linecap: round; }
+    .frame-model svg .shine { fill: none; stroke: rgba(255,255,255,.84); stroke-width: 5; stroke-linecap: round; }
+    .frame-model svg .tint { fill: rgba(39,77,125,.18); stroke: currentColor; stroke-width: 13; stroke-linejoin: round; }
+    .frame-model svg .arm { fill: none; stroke: currentColor; stroke-width: 8; stroke-linecap: round; }
+
+    /* Examination: a clear three-step path without unnecessary cards. */
+    .exam { position: relative; overflow: hidden; padding: clamp(80px, 10vw, 142px) 0; background: #fff; }
+    .exam::after { position: absolute; right: -90px; bottom: -160px; width: 450px; height: 450px; border: 1px solid #e3eaf2; border-radius: 50%; box-shadow: 0 0 0 44px #fff, 0 0 0 45px #edf0f3, 0 0 0 90px #fff, 0 0 0 91px #f0f1ed; content: ""; pointer-events: none; }
+    .exam-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 42px; }
+    .exam-head .section-intro { max-width: 375px; margin-bottom: 5px; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 34px; margin: 72px 0 0; padding: 0; list-style: none; }
+    .step { position: relative; min-height: 132px; padding-top: 23px; border-top: 1px solid #cdd3d8; }
+    .step-number { display: block; margin-bottom: 22px; color: var(--sapphire); font-size: 11px; font-variant-numeric: tabular-nums; letter-spacing: .1em; }
+    .step h3 { margin: 0 0 9px; color: var(--navy); font: 400 26px/1.1 var(--serif); }
+    .step p { max-width: 310px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.75; }
+    .exam-cta { display: flex; justify-content: flex-start; margin-top: 32px; }
+
+    /* Why Zafira: restrained, specific proof points instead of generic feature cards. */
+    .why { position: relative; padding: clamp(80px, 9vw, 124px) 0; background: var(--navy); color: var(--white); overflow: hidden; }
+    .why::before { position: absolute; top: -230px; right: 3%; width: 560px; height: 560px; border: 1px solid rgba(167,196,230,.17); border-radius: 50%; box-shadow: 0 0 0 56px rgba(255,255,255,.018), 0 0 0 57px rgba(167,196,230,.1), 0 0 0 120px rgba(255,255,255,.015), 0 0 0 121px rgba(167,196,230,.09); content: ""; }
+    .why-grid { position: relative; display: grid; grid-template-columns: .9fr 1.1fr; align-items: start; gap: 10%; }
+    .why .eyebrow { color: #8cb9f4; }
+    .why .section-title { max-width: 470px; color: var(--white); }
+    .why-copy { max-width: 540px; padding-top: 9px; color: #d1d9e3; font-size: 14px; line-height: 1.8; }
+    .why-copy p { margin: 0 0 17px; }
+    .value-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 28px; margin: 26px 0 0; padding: 0; border-top: 1px solid rgba(255,255,255,.2); list-style: none; }
+    .value-list li { display: flex; min-height: 57px; align-items: center; gap: 12px; border-bottom: 1px solid rgba(255,255,255,.2); color: #f2f4f7; font-size: 12px; font-weight: 600; }
+    .value-list svg { width: 17px; height: 17px; flex: none; color: #83b4f6; }
+
+    /* Image-led campaign strip; the portrait is a sourced stand-in until Zafira photos are available. */
+    .campaign { position: relative; display: grid; min-height: 460px; align-items: center; overflow: hidden; background: var(--warm); color: var(--white); isolation: isolate; }
+    .campaign img { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 38%; }
+    .campaign::before { position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, rgba(8,25,43,.67), rgba(8,25,43,.2) 72%, rgba(8,25,43,.08)); content: ""; }
+    .campaign-copy { width: min(calc(100% - 64px), var(--content)); margin-inline: auto; padding: 72px 0; }
+    .campaign-copy-inner { max-width: 510px; }
+    .campaign .eyebrow { color: #d7e7ff; }
+    .campaign h2 { margin: 0; font: 400 clamp(42px, 5.8vw, 76px)/.98 var(--serif); letter-spacing: -.025em; text-wrap: balance; }
+    .campaign p { max-width: 390px; margin: 18px 0 24px; color: rgba(255,255,255,.9); font-size: 14px; line-height: 1.75; }
+
+    /* Social proof stays close to the actual supplied score and verbatim reviews. */
+    .reviews { padding: clamp(82px, 9vw, 126px) 0; background: var(--paper); }
+    .review-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; }
+    .rating { display: flex; align-items: flex-end; gap: 17px; color: var(--navy); white-space: nowrap; }
+    .rating strong { font: 400 70px/.8 var(--serif); font-variant-numeric: tabular-nums; }
+    .rating-copy { padding-bottom: 2px; }
+    .rating-stars { margin-bottom: 5px; color: var(--sapphire); font-size: 13px; letter-spacing: .18em; }
+    .rating-copy span { display: block; color: #596575; font-size: 10px; letter-spacing: .06em; }
+    .quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 35px; margin-top: 62px; }
+    .quote { position: relative; min-height: 205px; padding: 26px 25px 24px 0; border-top: 1px solid #cdd3d8; }
+    .quote-mark { display: block; height: 44px; color: #8bb5e9; font: 400 58px/.9 var(--serif); }
+    .quote blockquote { margin: 6px 0 18px; color: var(--navy); font: 400 22px/1.34 var(--serif); text-wrap: pretty; }
+    .quote cite { color: #5c6775; font-size: 10px; font-style: normal; letter-spacing: .1em; text-transform: uppercase; }
+
+    /* Local visit information and map. */
+    .visit { padding: clamp(78px, 8vw, 116px) 0; background: #fff; }
+    .visit-head { margin-bottom: 42px; }
+    .visit-grid { display: grid; grid-template-columns: .92fr 1.08fr; gap: 56px; align-items: stretch; }
+    .address-block { display: flex; flex-direction: column; align-items: flex-start; }
+    .address-block h3 { margin: 0 0 16px; color: var(--navy); font: 400 31px/1.15 var(--serif); }
+    .address-block address { color: #4e5966; font-size: 14px; font-style: normal; line-height: 1.8; }
+    .address-block .hours { display: flex; align-items: center; gap: 10px; margin: 18px 0 0; color: var(--navy); font-size: 12px; font-weight: 700; }
+    .open-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--sapphire); box-shadow: 0 0 0 4px rgba(23,103,210,.13); }
+    .address-links { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 23px; }
+    .address-links .text-link { min-height: 44px; }
+    .map-frame { width: 100%; min-height: 330px; border: 0; background: #e8edf1; }
+    .pending-location { display: flex; align-items: flex-start; gap: 12px; margin-top: 42px; padding-top: 20px; border-top: 1px solid #e4e5e2; color: #5d6672; font-size: 11px; line-height: 1.65; }
+    .pending-location svg { width: 17px; height: 17px; flex: none; color: var(--sapphire); }
+    .pending-location strong { color: var(--navy); }
+
+    .site-footer { padding: 54px 0 24px; background: var(--navy-deep); color: #f5f6f8; }
+    .footer-main { display: grid; grid-template-columns: 1.2fr .8fr .8fr; gap: 48px; padding-bottom: 46px; }
+    .footer-brand { justify-content: flex-start; color: var(--white); }
+    .footer-brand .brand-name, .footer-brand .brand-overline { color: var(--white); }
+    .footer-note { max-width: 320px; margin: 19px 0 0; color: #c4ccd6; font-size: 12px; line-height: 1.75; }
+    .footer-col h2 { margin: 6px 0 16px; color: #a9c8f2; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; }
+    .footer-col a { display: flex; min-height: 44px; align-items: center; margin: 0; color: #edf0f4; font-size: 12px; line-height: 1.7; }
+    .footer-col p { display: block; margin: 0 0 10px; color: #edf0f4; font-size: 12px; line-height: 1.7; }
+    .footer-col a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding-top: 19px; border-top: 1px solid rgba(255,255,255,.17); color: #b4becb; font-size: 9px; letter-spacing: .05em; }
+    .footer-bottom a { display: inline-flex; min-height: 44px; align-items: center; }
+    .whatsapp-float { position: fixed; z-index: 25; right: calc(16px + env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); display: inline-flex; width: 56px; height: 56px; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,.3); border-radius: 50%; background: #1767d2; color: var(--white); box-shadow: 0 8px 24px rgba(11,29,51,.22); transition: transform .2s ease, background-color .2s ease; }
+    .whatsapp-float:hover { transform: translateY(-3px); background: #0e53b1; }
+    .whatsapp-float svg { width: 25px; height: 25px; }
+    .reveal { opacity: 1; transform: none; transition: opacity .65s ease, transform .65s cubic-bezier(.2,.7,.2,1); }
+    .js .reveal { opacity: 0; transform: translateY(18px); }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    .static-styles { display: none; }
+    .gem-lottie { display: inline-block; width: 23px; height: 23px; vertical-align: middle; }
+    .gem-fallback { width: 23px; height: 23px; color: currentColor; animation: gem-glint 1.4s ease-in-out 1; }
+    .lottie-ready .gem-fallback { display: none; }
+    @keyframes gem-glint { 0% { opacity: .65; transform: rotate(-8deg) scale(.94); } 60%,100% { opacity: 1; transform: rotate(0) scale(1); } }
+
+    @media (max-width: 940px) {
+      :root { --header-h: 72px; }
+      .wrap { width: min(calc(100% - 44px), var(--content)); }
+      .header-main { padding-inline: 22px; gap: 16px; }
+      .header-nav { gap: 16px; }
+      .header-nav a { font-size: 10px; }
+      .brand { min-width: 112px; }
+      .brand-mark { width: 29px; }
+      .brand-name { font-size: 31px; }
+      .header-action .button { padding-inline: 12px; }
+      .hero-copy, .campaign-copy { width: min(calc(100% - 44px), var(--content)); }
+      .promo { gap: 22px; padding-inline: 22px; }
+      .runway-header, .runway-hint { left: 22px; }
+      .runway-tag { right: 22px; }
+      .exam-head { align-items: flex-start; flex-direction: column; gap: 5px; }
+      .exam-head .section-intro { max-width: 580px; margin-top: 14px; }
+      .visit-grid { gap: 32px; }
+    }
+    @media (max-width: 700px) {
+      :root { --header-h: 0px; }
+      .wrap { width: calc(100% - 40px); }
+      .notice { min-height: 30px; gap: 9px; padding-inline: 10px; font-size: 8px; letter-spacing: .075em; }
+      .header-main { min-height: 68px; grid-template-columns: 1fr auto; padding: 0 20px; }
+      .brand { grid-column: 1; grid-row: 1; justify-content: flex-start; }
+      .brand-mark { width: 29px; height: 24px; }
+      .brand-overline { font-size: 7px; }
+      .brand-name { font-size: 31px; }
+      .header-nav { display: none; }
+      .header-action { grid-column: 2; grid-row: 1; }
+      .header-action .button { min-width: 46px; width: 46px; height: 46px; min-height: 46px; padding: 0; }
+      .header-action .button span { display: none; }
+      .mobile-nav { display: flex; gap: 23px; overflow-x: auto; padding: 0 20px; border-bottom: 1px solid #eeede8; background: #fff; scrollbar-width: none; }
+      .mobile-nav::-webkit-scrollbar { display: none; }
+      .mobile-nav a { display: flex; min-height: 44px; align-items: center; color: #4c5662; font-size: 10px; font-weight: 600; white-space: nowrap; }
+      .hero { min-height: 600px; min-height: min(690px, calc(100svh - 113px)); align-items: end; }
+      .hero-photo { inset: 0 0 0 auto; width: 100%; object-fit: contain; object-position: right bottom; }
+      .hero::before { background: linear-gradient(0deg, rgba(8,25,43,.72) 0%, rgba(8,25,43,.27) 55%, rgba(8,25,43,.04) 100%); }
+      .hero-copy { width: calc(100% - 40px); padding: 44px 0 73px; }
+      .hero-copy-inner { width: min(100%, 470px); }
+      .hero h1 { max-width: 480px; font-size: clamp(50px, 13vw, 72px); }
+      .hero-lead { max-width: 350px; margin-block: 14px 21px; font-size: 13px; }
+      .hero-meta { margin-top: 19px; font-size: 12px; }
+      .hero-caption { right: 20px; bottom: 12px; font-size: 8px; }
+      .promo-band { grid-template-columns: 1fr; }
+      .promo { min-height: 150px; justify-content: flex-start; gap: 22px; padding: 20px; }
+      .promo-art { width: clamp(98px, 30vw, 155px); }
+      .promo-copy h2 { font-size: 29px; }
+      .promo-copy p { max-width: 220px; font-size: 12px; }
+      .runway { height: 210svh; }
+      .runway-sticky { min-height: 540px; }
+      .runway-sticky::before { background: radial-gradient(ellipse at 68% 57%, #e8eef4 0%, rgba(232,238,244,.18) 39%, transparent 67%); }
+      .runway-header { top: 32px; left: 20px; width: min(340px, calc(100% - 40px)); }
+      .runway-header .eyebrow { margin-bottom: 11px; }
+      .runway-header .section-title { max-width: 350px; font-size: 43px; }
+      .runway-header .section-intro { max-width: 310px; margin-top: 11px; font-size: 12px; }
+      .frame-model { width: min(112vw, 560px); }
+      .runway-art::before { right: -3%; bottom: 28%; width: 94%; height: 7%; }
+      .runway-rule { right: -3%; bottom: 30%; left: 5%; }
+      .runway-tag { right: 20px; bottom: 17%; gap: 9px; }
+      .runway-tag-name { min-width: 100px; font-size: 21px; }
+      .runway-tag-rule { width: 22px; }
+      .runway-hint { bottom: 6%; left: 20px; gap: 7px; font-size: 8px; letter-spacing: .11em; }
+      .runway-progress { right: 20px; bottom: 6.7%; left: auto; width: 105px; }
+      .exam { padding-block: 77px; }
+      .exam .section-title { font-size: 44px; }
+      .steps { grid-template-columns: 1fr; gap: 22px; margin-top: 43px; }
+      .step { display: grid; min-height: 0; grid-template-columns: 34px 1fr; column-gap: 14px; padding-top: 17px; }
+      .step-number { grid-row: span 2; margin: 3px 0 0; }
+      .step h3 { margin-bottom: 5px; font-size: 24px; }
+      .step p { max-width: 390px; grid-column: 2; font-size: 12px; }
+      .exam-cta { margin-top: 29px; }
+      .why { padding-block: 76px; }
+      .why-grid { grid-template-columns: 1fr; gap: 25px; }
+      .why .section-title { max-width: 400px; font-size: 45px; }
+      .why-copy { padding-top: 0; font-size: 13px; }
+      .value-list { gap: 0 16px; }
+      .value-list li { min-height: 55px; gap: 8px; font-size: 10px; }
+      .value-list svg { width: 15px; height: 15px; }
+      .campaign { min-height: 470px; }
+      .campaign img { object-position: 61% center; }
+      .campaign::before { background: linear-gradient(0deg, rgba(8,25,43,.76), rgba(8,25,43,.14) 100%); }
+      .campaign-copy { width: calc(100% - 40px); align-self: end; padding: 50px 0 48px; }
+      .campaign h2 { max-width: 400px; font-size: 51px; }
+      .campaign p { max-width: 330px; font-size: 12px; }
+      .reviews { padding-block: 77px; }
+      .review-head { align-items: flex-start; flex-direction: column; gap: 27px; }
+      .reviews .section-title { font-size: 44px; }
+      .rating strong { font-size: 63px; }
+      .quotes { grid-template-columns: 1fr; gap: 10px; margin-top: 43px; }
+      .quote { min-height: 0; padding: 18px 5px 20px 0; }
+      .quote-mark { height: 36px; font-size: 49px; }
+      .quote blockquote { max-width: 440px; margin-block: 4px 12px; font-size: 23px; }
+      .visit { padding-block: 75px; }
+      .visit .section-title { font-size: 45px; }
+      .visit-grid { grid-template-columns: 1fr; gap: 32px; }
+      .map-frame { min-height: 280px; }
+      .pending-location { margin-top: 32px; }
+      .footer-main { grid-template-columns: 1fr 1fr; gap: 30px 22px; }
+      .footer-brand-block { grid-column: 1 / -1; }
+      .footer-bottom { flex-direction: column; gap: 8px; }
+      .whatsapp-float { right: 15px; bottom: 15px; width: 52px; height: 52px; }
+    }
+    @media (max-width: 390px) {
+      .notice { font-size: 7px; }
+      .hero { min-height: 590px; }
+      .hero h1 { font-size: 49px; }
+      .promo { gap: 14px; }
+      .promo-art { width: 92px; }
+      .promo-copy h2 { font-size: 26px; }
+      .runway-header .section-title { font-size: 39px; }
+      .runway-tag-name { min-width: 90px; }
+      .section-title, .exam .section-title, .why .section-title { text-wrap: balance; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+      .runway { height: auto; }
+      .runway-sticky { position: relative; display: block; height: auto; min-height: 0; overflow: visible; padding: 48px max(20px, calc((100vw - var(--content))/2)); }
+      .runway-header { position: relative; top: auto; left: auto; width: min(440px, 100%); }
+      .runway-art { position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 28px; overflow: visible; }
+      .runway-art::before, .runway-rule { display: none; }
+      .frame-model { position: relative; top: auto; left: auto; width: 100%; transform: none !important; opacity: 1 !important; filter: none !important; }
+      .frame-model svg { filter: none; }
+      .js .reveal { opacity: 1; transform: none; }
+      .runway-tag, .runway-hint, .runway-progress { display: none; }
+      .static-styles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 20px; margin: 26px 0 0; padding: 20px 0 0; border-top: 1px solid var(--line); list-style: none; }
+      .static-styles li { color: var(--navy); font: 18px/1.3 var(--serif); }
+    }
+
+    /* Real-frame carousel placeholders: the layout stays while the optician's photos arrive. */
+    .hero-photo-placeholder { position: absolute; z-index: -2; inset: 0; display: grid; place-items: center; overflow: hidden; background: linear-gradient(125deg, #102641 0%, #173f70 55%, #1767d2 100%); }
+    .hero-photo-placeholder::before, .campaign-photo-placeholder::before { position: absolute; width: min(48vw, 620px); aspect-ratio: 1; border: 1px solid rgba(220,234,255,.25); border-radius: 50%; box-shadow: 0 0 0 42px rgba(255,255,255,.025), 0 0 0 43px rgba(220,234,255,.14), 0 0 0 92px rgba(255,255,255,.02), 0 0 0 93px rgba(220,234,255,.1); content: ""; }
+    .photo-placeholder-label { position: relative; padding: 16px 20px; border: 1px solid rgba(255,255,255,.5); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-align: center; }
+    .runway { height: auto; padding: clamp(64px, 8vw, 112px) 0; }
+    .runway-sticky { position: relative; display: grid; height: auto; min-height: 0; gap: 36px; overflow: visible; padding: 0 max(32px, calc((100vw - var(--content))/2)); }
+    .runway-sticky::before { inset: 8% 0 0; }
+    .runway-header { position: relative; top: auto; left: auto; width: min(720px, 100%); }
+    .runway-header .section-intro { max-width: 540px; }
+    .runway-art { position: relative; display: grid; min-height: 330px; place-items: center; overflow: visible; perspective: none; }
+    .runway-art::before { right: 15%; bottom: 18%; width: 70%; height: 16%; }
+    .runway-rule { display: none; }
+    .carousel-viewport { position: relative; z-index: 2; display: grid; width: min(760px, calc(100% - 150px)); min-height: 270px; place-items: center; overflow: hidden; touch-action: pan-y; }
+    .carousel-visual { display: grid; width: 100%; min-height: 260px; place-items: center; transform: translateX(0) scale(1); opacity: 1; transition: transform .24s ease, opacity .24s ease; }
+    .carousel-visual.is-exiting-next { transform: translateX(-22px) scale(.985); opacity: 0; }
+    .carousel-visual.is-exiting-prev { transform: translateX(22px) scale(.985); opacity: 0; }
+    .frame-placeholder { display: grid; width: 100%; min-height: 250px; place-items: center; border: 1px solid #cbd6e4; background: rgba(255,255,255,.72); box-shadow: 0 22px 52px rgba(16,38,65,.08); }
+    .frame-placeholder span { padding: 14px 18px; border: 1px dashed #7997bd; color: var(--navy); font-size: 11px; font-weight: 700; letter-spacing: .16em; text-align: center; }
+    .frame-placeholder img { display: block; width: 100%; height: 100%; max-height: 330px; object-fit: contain; }
+    .carousel-arrow { position: relative; z-index: 5; display: grid; width: 56px; height: 56px; flex: none; place-items: center; border: 1px solid #bdcde0; border-radius: 50%; background: #fff; color: var(--navy); cursor: pointer; transition: color .2s ease, background-color .2s ease, border-color .2s ease, transform .2s ease; }
+    .carousel-arrow:hover { transform: translateY(-2px); border-color: var(--sapphire); background: var(--sapphire); color: #fff; }
+    .carousel-arrow svg { width: 22px; height: 22px; }
+    .carousel-arrow.prev { position: absolute; left: 0; }
+    .carousel-arrow.next { position: absolute; right: 0; }
+    .carousel-meta { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px 18px; width: min(760px, calc(100% - 150px)); margin: -4px auto 0; padding-top: 18px; border-top: 1px solid #d5dce4; }
+    .carousel-style { margin: 0; color: var(--navy); font: 28px/1.1 var(--serif); }
+    .carousel-description { grid-column: 1 / -1; margin: 0; color: var(--muted); font-size: 13px; }
+    .carousel-count { color: var(--sapphire); font-size: 12px; font-variant-numeric: tabular-nums; letter-spacing: .1em; }
+    .carousel-dots { display: flex; justify-content: flex-end; gap: 8px; }
+    .carousel-dot { width: 12px; height: 12px; padding: 0; border: 1px solid #7793b4; border-radius: 50%; background: transparent; cursor: pointer; }
+    .carousel-dot[aria-current="true"] { border-color: var(--sapphire); background: var(--sapphire); }
+    .runway-hint { position: static; justify-content: center; margin-top: 0; }
+    .runway-progress { display: none; }
+    .static-styles { display: none; }
+    .services { padding: clamp(72px, 9vw, 124px) 0; background: var(--paper); }
+    .services-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 32px; margin-top: 48px; border-top: 1px solid #cdd3d8; }
+    .service-item { min-height: 78px; padding: 20px 0; border-bottom: 1px solid #cdd3d8; color: var(--navy); font: 22px/1.2 var(--serif); }
+    .faq { padding: clamp(74px, 9vw, 122px) 0; background: #fff; }
+    .faq-list { max-width: 880px; margin-top: 42px; border-top: 1px solid #cdd3d8; }
+    .faq-list details { border-bottom: 1px solid #cdd3d8; }
+    .faq-list summary { display: flex; min-height: 58px; align-items: center; justify-content: space-between; gap: 18px; color: var(--navy); cursor: pointer; font-size: 15px; font-weight: 600; list-style: none; }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after { color: var(--sapphire); content: "+"; font: 24px/1 var(--sans); }
+    .faq-list details[open] summary::after { content: "−"; }
+    .faq-list details p { max-width: 720px; margin: 0 0 20px; color: var(--muted); font-size: 14px; line-height: 1.7; }
+    .unit-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 36px; }
+    .unit-card { padding: 22px 0; border-top: 1px solid #bdc7d2; }
+    .unit-card h3 { margin: 0 0 12px; color: var(--navy); font: 27px/1.12 var(--serif); }
+    .unit-card p { margin: 0 0 10px; color: #4e5966; font-size: 13px; line-height: 1.75; }
+    .unit-status { display: inline-block; margin: 2px 0 12px; padding: 5px 8px; border: 1px solid #b9cbe1; color: var(--navy); font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .campaign-photo-placeholder { position: absolute; z-index: -2; inset: 0; display: grid; place-items: center; overflow: hidden; background: linear-gradient(125deg, #102641, #173f70); }
+    @media (max-width: 700px) {
+      .runway { padding: 68px 0; }
+      .runway-sticky { display: grid; gap: 24px; padding-inline: 20px; }
+      .runway-header { width: 100%; }
+      .runway-art { min-height: 250px; }
+      .carousel-viewport, .carousel-meta { width: calc(100% - 116px); }
+      .carousel-viewport { min-height: 220px; }
+      .carousel-visual, .frame-placeholder { min-height: 210px; }
+      .carousel-arrow { width: 48px; height: 48px; }
+      .carousel-meta { grid-template-columns: 1fr; gap: 10px; margin-top: 0; }
+      .carousel-dots { justify-content: flex-start; }
+      .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 20px; margin-top: 34px; }
+      .service-item { font-size: 19px; }
+      .unit-cards { grid-template-columns: 1fr; gap: 6px; }
+      .faq-list summary { font-size: 14px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .carousel-visual { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="notice">
+    <span>Exame de vista gratuito</span><span class="dot" aria-hidden="true"></span><span>Éden · aberto até 18h</span><span class="dot" aria-hidden="true"></span><span>Agendamento pelo WhatsApp</span>
+  </div>
+  <header class="site-header">
+    <div class="header-main">
+      <nav class="header-nav" aria-label="Navegação principal">
+        <a href="#modelos">Armações</a><a href="#exame">Exame grátis</a><a href="#avaliacoes">Avaliações</a><a href="#faq">Dúvidas</a><a href="#unidades">Onde estamos</a>
+      </nav>
+      <a class="brand" href="#topo" aria-label="Óticas Zafira — início">
+        <svg class="brand-mark" viewBox="0 0 64 44" aria-hidden="true"><path d="M3 22C11 9 21 4 32 4s21 5 29 18C53 35 43 40 32 40S11 35 3 22Z" fill="none" stroke="#102641" stroke-width="2.5"/><path d="M32 9 42 22 32 35 22 22 32 9Z" fill="#1767d2"/><path d="m32 9 0 26M22 22h20" fill="none" stroke="#dceaff" stroke-width="1.5"/><path d="M9 20c5-6 11-10 18-11" fill="none" stroke="#1767d2" stroke-linecap="round" stroke-width="1.5"/></svg>
+        <span class="brand-copy"><span class="brand-overline">ÓTICAS</span><span class="brand-name">Zafira</span></span>
+      </a>
+      <div class="header-action"><a class="button" href="https://wa.me/5515974016571?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20exame%20de%20vista%20gratuito." target="_blank" rel="noopener noreferrer" aria-label="Falar com a equipe pelo WhatsApp"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 11.6a7.8 7.8 0 0 1-11.5 6.8L4 20l1.5-4.2A7.8 7.8 0 1 1 20 11.6Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 8.5c.2-.5.5-.5.8-.5h.4c.2 0 .3.1.4.4l.7 1.6c.1.2 0 .4-.1.5l-.5.6c-.2.2-.2.3-.1.5.5.9 1.2 1.5 2.1 2 .2.1.4.1.5-.1l.7-.8c.1-.2.3-.2.5-.1l1.5.7c.3.1.4.2.4.4 0 .3-.2 1-.7 1.3-.4.3-.8.5-1.5.3-1.8-.4-3.2-1.4-4.4-2.8-1-1.2-1.4-2.2-1.5-3.1 0-.6.2-1 .8-1.4Z" fill="currentColor"/></svg><span>Falar com a equipe</span></a></div>
+    </div>
+    <nav class="mobile-nav" aria-label="Navegação principal">
+      <a href="#modelos">Armações</a><a href="#exame">Exame grátis</a><a href="#avaliacoes">Avaliações</a><a href="#faq">Dúvidas</a><a href="#unidades">Onde estamos</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="topo" aria-labelledby="hero-title">
+      <img class="hero-photo" src="oculos/watermarked_img_17666218829610469855.webp" alt="Mulher usando óculos de sol, foto de referência da coleção">
+      <div class="hero-copy">
+        <div class="hero-copy-inner">
+          <p class="eyebrow"><span id="sapphire-lottie" class="gem-lottie" aria-hidden="true"><svg class="gem-fallback" viewBox="0 0 24 24" fill="none"><path d="m12 2 8 7-8 13L4 9l8-7Z" stroke="currentColor" stroke-width="1.5"/><path d="M4 9h16M8 9l4 13 4-13M9 4l3 5 3-5" stroke="currentColor" stroke-width="1.2"/></svg></span> Óticas Zafira · Sorocaba</p>
+          <h1 id="hero-title">A ótica que combina <em>estilo</em> e precisão.</h1>
+          <p class="hero-lead">Encontre uma armação com a sua cara, atendimento próximo e preço justo. Seu próximo olhar começa por aqui.</p>
+          <a class="button button-outline" href="https://wa.me/5515974016571?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20exame%20de%20vista%20gratuito." target="_blank" rel="noopener noreferrer">Agendar exame de vista grátis <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="hero-meta"><span class="stars" aria-hidden="true">★★★★★</span><span>4,9 de 257 avaliações no Google</span><span class="separator" aria-hidden="true"></span><span>Éden, Sorocaba</span></div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="promo-band" aria-label="Destaques da Óticas Zafira">
+      <article class="promo">
+        <svg class="promo-art" viewBox="0 0 240 112" aria-hidden="true"><path d="M29 47c2-12 9-18 20-19l53-2c11 0 17 5 19 15l4 22c1 9-4 15-13 16l-37 4c-10 1-16-4-18-13l-3-13H49l-3 16c-2 9-8 13-18 12L8 83c-8-1-12-8-10-16l4-16c2-10 8-14 19-14Z" transform="translate(18 7)" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><path d="m119 42 18-4m-94 0-18-4m122 5 45-18m-176 0L0 2" transform="translate(18 7)" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M67 32c15 14 17 28 11 46M146 32c-15 14-17 28-11 46" transform="translate(18 7)" fill="none" stroke="#1767d2" stroke-width="2" opacity=".6"/></svg>
+        <div class="promo-copy"><p class="eyebrow">Cuidado que começa no olhar</p><h2>Exame de vista gratuito</h2><p>Fale com a equipe e encontre um horário pelo WhatsApp.</p><a class="text-link" href="#exame">Saiba como funciona <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      </article>
+      <article class="promo">
+        <svg class="promo-art" viewBox="0 0 240 112" aria-hidden="true"><path d="M28 43c15-10 32-12 50-9l12 27c5 12 0 23-13 27-12 4-25-1-31-11L28 57l-8 2c-6 1-10-2-10-7 0-4 4-7 9-7Zm184 0c-15-10-32-12-50-9l-12 27c-5 12 0 23 13 27 12 4 25-1 31-11l18-20 8 2c6 1 10-2 10-7 0-4-4-7-9-7Z" fill="rgba(141,100,71,.11)" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><path d="M90 54c14-7 46-7 60 0m-65-2-13-7m85 7 13-7" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="m44 47 10 17m143-17-10 17" stroke="#1767d2" stroke-width="5" stroke-linecap="round" opacity=".8"/></svg>
+        <div class="promo-copy"><p class="eyebrow">Seu estilo, muitas possibilidades</p><h2>Armações para cada versão sua</h2><p>Do clássico ao marcante, descubra diferentes formas e materiais.</p><a class="text-link" href="#modelos">Explorar estilos <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      </article>
+    </section>
+
+    <section class="runway" id="modelos" aria-label="Carrossel de armações reais">
+      <div class="runway-sticky">
+        <div class="runway-header reveal">
+          <p class="eyebrow">Modelos da loja</p>
+          <h2 class="section-title">Armações para conhecer de perto.</h2>
+          <p class="section-intro">As fotos dos modelos reais entram aqui assim que você enviar. Por enquanto, deixamos os espaços identificados, sem usar armações ilustrativas.</p>
+        </div>
+        <div class="runway-art" id="runway-art">
+          <button class="carousel-arrow prev" id="eyewear-prev" type="button" aria-label="Óculos anterior"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m15 18-6-6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="carousel-viewport" id="eyewear-viewport" aria-roledescription="carrossel" aria-label="Modelos de armação">
+            <div class="carousel-visual" id="eyewear-visual" aria-live="polite" aria-atomic="true"></div>
+          </div>
+          <button class="carousel-arrow next" id="eyewear-next" type="button" aria-label="Próximo óculos"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 18 6-6-6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+        <div class="carousel-meta">
+          <h3 class="carousel-style" id="eyewear-style">Aviador</h3>
+          <span class="carousel-count" id="eyewear-count">1 / 7</span>
+          <p class="carousel-description" id="eyewear-description">[CONFIRMAR: descrição do modelo aviador]</p>
+          <div class="carousel-dots" id="eyewear-dots" role="group" aria-label="Escolher estilo da armação"></div>
+        </div>
+        <p class="runway-hint" id="runway-hint">Use as setas, deslize no celular ou toque nos indicadores.</p>
+        <span class="sr-only" id="eyewear-announcement" aria-live="polite" aria-atomic="true"></span>
+      </div>
+    </section>
+
+    <section class="exam" id="exame" aria-labelledby="exam-title">
+      <div class="wrap">
+        <div class="exam-head reveal">
+          <div><p class="eyebrow">Cuidar da visão também pode ser simples</p><h2 class="section-title" id="exam-title">Seu exame gratuito, em três passos.</h2></div>
+          <p class="section-intro">Converse com a equipe, combine o melhor horário e venha até a unidade do Éden.</p>
+        </div>
+        <ol class="steps">
+          <li class="step reveal"><span class="step-number">01</span><h3>Chame no WhatsApp</h3><p>Conte que quer fazer um exame de vista gratuito e tire suas dúvidas com a equipe.</p></li>
+          <li class="step reveal"><span class="step-number">02</span><h3>Agende seu horário</h3><p>Escolha junto com a equipe um horário para vir à unidade do Éden.</p></li>
+          <li class="step reveal"><span class="step-number">03</span><h3>Venha com tranquilidade</h3><p>Faça seu exame e, se quiser, conheça as armações disponíveis na loja.</p></li>
+        </ol>
+        <div class="exam-cta reveal"><a class="button" href="https://wa.me/5515974016571?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20exame%20de%20vista%20gratuito." target="_blank" rel="noopener noreferrer">Agendar exame grátis <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="reveal"><p class="eyebrow">Pode perguntar</p><h2 class="section-title" id="faq-title">Dúvidas que podem surgir.</h2></div>
+        <div class="faq-list">
+          <details><summary>Como faço para agendar o exame de vista gratuito?</summary><p>Chame a equipe pelo WhatsApp no (15) 97401-6571 para combinar um horário na unidade do Éden.</p></details>
+          <details><summary>Quanto tempo leva para os óculos ficarem prontos?</summary><p>[CONFIRMAR: prazo médio de produção e entrega dos óculos.]</p></details>
+          <details><summary>Posso levar uma receita de outro oftalmologista?</summary><p>[CONFIRMAR: a ótica aceita receitas emitidas por outro oftalmologista?]</p></details>
+          <details><summary>Quais formas de pagamento vocês aceitam?</summary><p>[CONFIRMAR: formas de pagamento aceitas.]</p></details>
+          <details><summary>Vocês fazem ajustes e consertos?</summary><p>A ótica faz ajustes de armação. Para consertos: [CONFIRMAR: quais serviços e condições estão disponíveis.]</p></details>
+          <details><summary>Qual é o horário de funcionamento?</summary><p>Éden: aberto até 18h. [CONFIRMAR: dias de atendimento e horário de abertura.] Altos do Ipanema II: [CONFIRMAR: horário de funcionamento da unidade.]</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" id="sobre" aria-labelledby="why-title">
+      <div class="wrap why-grid">
+        <div class="reveal"><p class="eyebrow">Quem somos</p><h2 class="section-title" id="why-title">Uma ótica de bairro, feita para atender de perto.</h2></div>
+        <div class="why-copy reveal"><p>Somos uma ótica de bairro em Sorocaba. Por aqui, a gente conversa com você de perto e ajuda a encontrar uma armação que combine com seu estilo.</p><p>Na Óticas Zafira, juntamos estilo, qualidade e preço justo com cuidado em cada etapa — até a entrega dos óculos no prazo.</p>
+          <ul class="value-list"><li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Estilo para o seu dia a dia</li><li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Qualidade com preço justo</li><li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Atendimento próximo</li><li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Entrega no prazo combinado</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="servicos" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="reveal"><p class="eyebrow">O que a gente faz</p><h2 class="section-title" id="services-title">Cuidado para acompanhar sua rotina.</h2><p class="section-intro">Do exame à escolha dos óculos, a equipe está por perto para ajudar.</p></div>
+        <div class="services-grid"><div class="service-item">Exame de vista gratuito</div><div class="service-item">Armações de grau</div><div class="service-item">Armações solares</div><div class="service-item">Lentes</div><div class="service-item">Ajustes de armação</div><div class="service-item">Entrega no prazo combinado</div></div>
+      </div>
+    </section>
+
+    <section class="campaign" aria-labelledby="campaign-title">
+      <div class="campaign-photo-placeholder" role="img" aria-label="Espaço reservado para uma foto real da equipe ou da loja"><span class="photo-placeholder-label">FOTO DA EQUIPE AQUI</span></div>
+      <div class="campaign-copy"><div class="campaign-copy-inner reveal"><p class="eyebrow">Um convite para experimentar</p><h2 id="campaign-title">Seu próximo olhar merece ser seu.</h2><p>Venha conhecer as armações na unidade do Éden. A equipe ajuda você a encontrar uma que tenha a ver com o seu estilo.</p><a class="button button-outline" href="https://www.google.com/maps/search/?api=1&query=Av.+Independ%C3%AAncia%2C+4830%2C+%C3%89den%2C+Sorocaba+-+SP" target="_blank" rel="noopener noreferrer">Ver como chegar <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9" r="2.2" stroke="currentColor" stroke-width="1.6"/></svg></a></div></div>
+    </section>
+
+    <section class="reviews" id="avaliacoes" aria-labelledby="reviews-title">
+      <div class="wrap">
+        <div class="review-head reveal"><div><p class="eyebrow">Quem já passou por aqui</p><h2 class="section-title" id="reviews-title">Atendimento que faz diferença.</h2></div><div class="rating" aria-label="Nota 4,9 de 5 com 257 avaliações"><strong>4,9</strong><div class="rating-copy"><div class="rating-stars" aria-hidden="true">★★★★★</div><span>257 avaliações no Google</span></div></div></div>
+        <div class="quotes">
+          <figure class="quote reveal"><span class="quote-mark" aria-hidden="true">“</span><blockquote>Ótimo atendimento, entrega dos óculos dentro do prazo e ótimas vendedoras.</blockquote><figcaption><cite>Avaliação de cliente</cite></figcaption></figure>
+          <figure class="quote reveal"><span class="quote-mark" aria-hidden="true">“</span><blockquote>Atendimento ótimo da Monik, preços bons, qualidade show!!!</blockquote><figcaption><cite>Avaliação de cliente</cite></figcaption></figure>
+          <figure class="quote reveal"><span class="quote-mark" aria-hidden="true">“</span><blockquote>Bom em tudo, preço e atendimento excelente. Variedades de armações. Vale a pena.</blockquote><figcaption><cite>Avaliação de cliente</cite></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit" id="unidades" aria-labelledby="visit-title">
+      <div class="wrap">
+        <div class="visit-head reveal"><p class="eyebrow">Esperamos por você</p><h2 class="section-title" id="visit-title">Venha conhecer a unidade do Éden.</h2></div>
+        <div class="unit-cards">
+          <article class="unit-card reveal"><span class="unit-status">Unidade principal</span><h3>Óticas Zafira · Éden</h3><p>Av. Independência, 4830<br>Éden, Sorocaba – SP · CEP 18103-000</p><p><strong>Aberto até 18h</strong><br>[CONFIRMAR: dias de atendimento e horário de abertura.]</p><div class="address-links"><a class="text-link" href="tel:+5515974016571">Ligar: (15) 97401-6571</a><a class="text-link" href="https://wa.me/5515974016571?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20%C3%93ticas%20Zafira." target="_blank" rel="noopener noreferrer">WhatsApp da loja</a></div></article>
+          <article class="unit-card reveal"><span class="unit-status">[CONFIRMAR ANTES DE PUBLICAR]</span><h3>Unidade · Altos do Ipanema II</h3><p>Rua Helena Angelina Dacol Manasses, 60<br>Altos do Ipanema II, Sorocaba – SP</p><p>Telefone: (15) 99825-9336<br>[CONFIRMAR: horário de funcionamento e dados da unidade.]</p><div class="address-links"><a class="text-link" href="tel:+5515998259336">Ligar para a unidade</a><a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Helena+Angelina+Dacol+Manasses%2C+60%2C+Sorocaba+-+SP" target="_blank" rel="noopener noreferrer">Ver mapa</a></div></article>
+        </div>
+        <div class="visit-map reveal"><iframe class="map-frame" title="Mapa da unidade Óticas Zafira no Éden, Sorocaba" src="https://www.google.com/maps?q=Av.%20Independ%C3%AAncia%2C%204830%2C%20%C3%89den%2C%20Sorocaba%20-%20SP%2C%2018103-000&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-main">
+        <div class="footer-brand-block"><a class="brand footer-brand" href="#topo" aria-label="Óticas Zafira — voltar ao início"><svg class="brand-mark" viewBox="0 0 64 44" aria-hidden="true"><path d="M3 22C11 9 21 4 32 4s21 5 29 18C53 35 43 40 32 40S11 35 3 22Z" fill="none" stroke="#fff" stroke-width="2.5"/><path d="M32 9 42 22 32 35 22 22 32 9Z" fill="#4a90ef"/><path d="m32 9 0 26M22 22h20" fill="none" stroke="#dceaff" stroke-width="1.5"/></svg><span class="brand-copy"><span class="brand-overline">ÓTICAS</span><span class="brand-name">Zafira</span></span></a><p class="footer-note">A ótica que combina estilo e precisão. Estilo, qualidade e preço justo em Sorocaba.</p></div>
+        <div class="footer-col"><h2>Encontre</h2><a href="#modelos">Armações</a><a href="#exame">Exame de vista grátis</a><a href="#avaliacoes">Avaliações</a><a href="#unidades">Unidade Éden</a></div>
+        <div class="footer-col"><h2>Fale com a gente</h2><a href="tel:+5515974016571">(15) 97401-6571</a><a href="https://www.instagram.com/oticas.zafira/" target="_blank" rel="noopener noreferrer">Instagram @oticas.zafira</a><p>Av. Independência, 4830<br>Éden · Sorocaba/SP</p></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year">2026</span> Óticas Zafira · Sorocaba/SP</span><span>Fotos próprias pendentes: loja, equipe e armações.</span></div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5515974016571?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20%C3%93ticas%20Zafira." target="_blank" rel="noopener noreferrer" aria-label="Falar com a Óticas Zafira pelo WhatsApp"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 11.6a7.8 7.8 0 0 1-11.5 6.8L4 20l1.5-4.2A7.8 7.8 0 1 1 20 11.6Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 8.5c.2-.5.5-.5.8-.5h.4c.2 0 .3.1.4.4l.7 1.6c.1.2 0 .4-.1.5l-.5.6c-.2.2-.2.3-.1.5.5.9 1.2 1.5 2.1 2 .2.1.4.1.5-.1l.7-.8c.1-.2.3-.2.5-.1l1.5.7c.3.1.4.2.4.4 0 .3-.2 1-.7 1.3-.4.3-.8.5-1.5.3-1.8-.4-3.2-1.4-4.4-2.8-1-1.2-1.4-2.2-1.5-3.1 0-.6.2-1 .8-1.4Z" fill="currentColor"/></svg></a>
+
+<script>
+  (() => {
+    document.documentElement.classList.add('js');
+    const eyewearModels = [
+      { image: '', style: 'Aviador', description: '[CONFIRMAR: descrição do modelo aviador]' },
+      { image: 'oculos/images.jpg', style: 'Gatinho', description: '[CONFIRMAR: descrição do modelo gatinho]' },
+      { image: 'assets/oculos-redondos.webp', style: 'Redondo', description: '[CONFIRMAR: descrição do modelo redondo]' },
+      { image: 'assets/oculos-retangulares.webp', style: 'Quadrado', description: '[CONFIRMAR: descrição do modelo quadrado]' },
+      { image: 'oculos/Gemini_Generated_Image_90k4y190k4y190k4.jpg', style: 'Acetato', description: '[CONFIRMAR: descrição do modelo em acetato]' },
+      { image: 'oculos/images (1).jpg', style: 'Metal fino', description: '[CONFIRMAR: descrição do modelo de metal fino]' },
+      { image: 'oculos/D_NQ_NP_967522-CBT114634679511_072026-O-kit-4-oculos-de-sol-quadrados-geometricos.webp', style: 'Solar', description: '[CONFIRMAR: descrição do modelo solar]' },
+      { image: 'oculos/images (2).jpg', style: 'Gatinho', description: '[CONFIRMAR: descrição do modelo gatinho]' },
+      { image: 'oculos/images (3).jpg', style: 'Redondo', description: '[CONFIRMAR: descrição do modelo redondo]' },
+      { image: 'oculos/images (4).jpg', style: 'Gatinho', description: '[CONFIRMAR: descrição do modelo gatinho]' }
+    ];
+    const visual = document.getElementById('eyewear-visual');
+    const viewport = document.getElementById('eyewear-viewport');
+    const styleLabel = document.getElementById('eyewear-style');
+    const countLabel = document.getElementById('eyewear-count');
+    const description = document.getElementById('eyewear-description');
+    const dots = document.getElementById('eyewear-dots');
+    const announcement = document.getElementById('eyewear-announcement');
+    let current = 0;
+    let startX = null;
+    let changeTimer;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    function render() {
+      const item = eyewearModels[current];
+      visual.innerHTML = item.image
+        ? `<img src="${item.image}" alt="Armação estilo ${item.style}">`
+        : `<div class="frame-placeholder" role="img" aria-label="Foto do modelo ${item.style} ainda não enviada"><span>FOTO DO MODELO AQUI</span></div>`;
+      styleLabel.textContent = item.style;
+      countLabel.textContent = `${current + 1} / ${eyewearModels.length}`;
+      description.textContent = item.description;
+      dots.innerHTML = eyewearModels.map((model, index) =>
+        `<button class="carousel-dot${index === current ? ' is-active' : ''}" type="button" data-index="${index}" aria-label="Ver estilo ${model.style}"${index === current ? ' aria-current="true"' : ''}></button>`
+      ).join('');
+      announcement.textContent = `Estilo ${item.style}, ${current + 1} de ${eyewearModels.length}`;
+    }
+
+    function goTo(index, direction = 1) {
+      const next = (index + eyewearModels.length) % eyewearModels.length;
+      if (next === current) return;
+      clearTimeout(changeTimer);
+      if (reducedMotion.matches) {
+        current = next;
+        render();
+        return;
+      }
+      visual.classList.add(direction > 0 ? 'is-exiting-next' : 'is-exiting-prev');
+      changeTimer = window.setTimeout(() => {
+        current = next;
+        render();
+        visual.classList.remove('is-exiting-next', 'is-exiting-prev');
+      }, 190);
+    }
+
+    document.getElementById('eyewear-prev').addEventListener('click', () => goTo(current - 1, -1));
+    document.getElementById('eyewear-next').addEventListener('click', () => goTo(current + 1, 1));
+    dots.addEventListener('click', event => {
+      const button = event.target.closest('[data-index]');
+      if (button) goTo(Number(button.dataset.index), Number(button.dataset.index) >= current ? 1 : -1);
+    });
+    viewport.addEventListener('keydown', event => {
+      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+        event.preventDefault();
+        goTo(current + (event.key === 'ArrowRight' ? 1 : -1), event.key === 'ArrowRight' ? 1 : -1);
+      }
+    });
+    viewport.addEventListener('pointerdown', event => { startX = event.clientX; });
+    viewport.addEventListener('pointerup', event => {
+      if (startX === null) return;
+      const delta = event.clientX - startX;
+      startX = null;
+      if (Math.abs(delta) > 45) goTo(current + (delta < 0 ? 1 : -1), delta < 0 ? 1 : -1);
+    });
+    viewport.addEventListener('pointercancel', () => { startX = null; });
+    render();
+
+    const revealItems = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window && !reducedMotion.matches) {
+      const revealObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      }), { threshold: 0.12 });
+      revealItems.forEach(item => revealObserver.observe(item));
+    } else revealItems.forEach(item => item.classList.add('is-visible'));
+    const year = document.getElementById('year');
+    if (year) year.textContent = new Date().getFullYear();
+  })();
+
+  (() => {
+    return;
+    document.documentElement.classList.add('js');
+      const frameDefs = [
+        { name: 'Aviador', color: '#173553', shape: 'aviator' },
+        { name: 'Gatinho', color: '#173553', shape: 'cat-eye' },
+        { name: 'Redondo', color: '#9b9fa3', shape: 'round' },
+        { name: 'Quadrado', color: '#183a5a', shape: 'square' },
+        { name: 'Acetato azul', color: '#1767d2', shape: 'acetate' },
+        { name: 'Metal fino', color: '#9b9fa3', shape: 'wire' },
+        { name: 'Solar clássico', color: '#252d36', shape: 'sun' },
+        { name: 'Redondo leve', color: '#9b9fa3', shape: 'light-round' }
+      ];
+      const shapes = {
+        aviator: '<path class="lens" d="M79 57Q143 32 284 49l22 91q4 57-74 84-66 17-106-31-29-34-40-136Zm314-8q141-17 205 8l-7 136q-11 102-77 85-78-23-74-80l22-91Z"/><path class="bridge" d="M302 89q43-30 88 0"/>',
+        'cat-eye': '<path class="lens" d="M62 60Q145 27 291 58l-7 120q-11 55-72 57-62 2-92-43Q97 162 62 60Zm348-2q146-31 229 2-35 102-58 132-30 45-92 43-61-2-72-57Z"/><path class="bridge" d="M291 93q59-27 119 0"/>',
+        round: '<circle class="lens" cx="183" cy="130" r="91"/><circle class="lens" cx="517" cy="130" r="91"/><path class="bridge" d="M274 105q55-38 112 0"/>',
+        square: '<path class="lens" d="M80 59Q175 37 292 58l-8 129q-2 20-24 24-96 16-145-1-24-8-27-35L80 59Zm332-1q117-21 212 1l-8 116q-3 27-27 35-49 17-145 1-22-4-24-24Z"/><path class="bridge" d="M290 90q58-24 122 0"/>',
+        acetate: '<path class="tint" d="M82 57Q165 40 290 57l-5 113q-3 52-63 57-70 6-105-34-26-31-35-136Zm326 0q125-17 208 0-9 105-35 136-35 40-105 34-60-5-63-57Z"/><path class="bridge" d="M291 91q58-25 116 0"/>',
+        wire: '<circle class="wire" cx="181" cy="130" r="85"/><circle class="wire" cx="519" cy="130" r="85"/><path class="bridge" d="M266 108q67-33 168 0"/><path class="arm" d="m96 91-72-30m576 30 72-30"/>',
+        sun: '<path class="tint" d="M79 61Q167 34 291 57l-5 112q-5 57-68 60-77 4-111-39Q82 158 79 61Zm330-4q124-23 212 4-3 97-28 129-34 43-111 39-63-3-68-60Z"/><path class="bridge" d="M290 91q58-24 120 0"/>',
+        'light-round': '<circle class="wire" cx="183" cy="130" r="83"/><circle class="wire" cx="517" cy="130" r="83"/><path class="bridge" d="M266 108q67-32 168 0"/><path class="arm" d="m100 92-68-23m568 23 68-23"/>'
+      };
+      const art = document.getElementById('runway-art');
+      const figures = frameDefs.map((frame, index) => {
+        const node = document.createElement('div');
+        node.className = 'frame-model';
+        node.dataset.index = String(index);
+        node.style.color = frame.color;
+        const lensShape = shapes[frame.shape].replace(/class="lens"/g, `class="lens" fill="url(#lens-${index})"`);
+        node.innerHTML = `<svg viewBox="0 0 700 260" focusable="false"><defs><linearGradient id="lens-${index}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b8d7f7" stop-opacity=".45"/><stop offset=".52" stop-color="#f9fbfd" stop-opacity=".12"/><stop offset="1" stop-color="#81b6ef" stop-opacity=".27"/></linearGradient></defs>${lensShape}<path class="arm" d="M77 72 20 51m603 21 57-21"/><path class="shine" d="M116 76q35-18 73-16m254 0q38-2 73 16"/></svg>`;
+        art.append(node);
+        return node;
+      });
+      const runway = document.getElementById('modelos');
+      const stage = document.getElementById('runway-stage');
+      const title = document.getElementById('frame-name');
+      const number = document.getElementById('frame-number');
+      const announcement = document.getElementById('frame-announcement');
+      const bar = document.getElementById('runway-bar');
+      const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+      const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+      let current = 0;
+      let target = 0;
+      let raf = 0;
+      let lastTime = 0;
+      let previousLabel = -1;
+      let itemWidth = 0;
+      let itemHeight = 0;
+      const xs = [.78, .68, .61, .56, .515, .48, .45, .43];
+      const ys = [.58, .59, .60, .61, .62, .63, .635, .64];
+      const scales = [1.05, .77, .58, .43, .31, .22, .16, .11];
+      const opacities = [1, .94, .82, .64, .43, .26, .14, .04];
+      const mixAt = (table, depth) => {
+        const lo = Math.floor(clamp(depth, 0, table.length - 1));
+        const hi = Math.min(lo + 1, table.length - 1);
+        const t = clamp(depth - lo, 0, 1);
+        return table[lo] + (table[hi] - table[lo]) * t;
+      };
+      function measureScroll() {
+        if (reduceMotion.matches) {
+          target = 0; current = 0;
+          stage.removeAttribute('tabindex');
+          stage.removeAttribute('aria-describedby');
+          runway.setAttribute('aria-label', 'Variedade de armações. Os estilos estão listados abaixo.');
+          paint();
+          return;
+        }
+        stage.setAttribute('tabindex', '0');
+        stage.setAttribute('aria-describedby', 'runway-hint');
+        runway.setAttribute('aria-label', 'Variedade de armações. Role a página ou use as setas para explorar os estilos.');
+        const runwayTop = runway.getBoundingClientRect().top + window.scrollY;
+        const runwayRange = Math.max(1, runway.offsetHeight - stage.clientHeight);
+        target = clamp((window.scrollY - runwayTop) / runwayRange * (frameDefs.length - 1), 0, frameDefs.length - 1);
+        if (reduceMotion.matches) { current = target; paint(); }
+        else if (!raf) raf = requestAnimationFrame(animate);
+      }
+      function paint() {
+        const width = stage.clientWidth;
+        const height = stage.clientHeight;
+        if (!itemWidth) {
+          itemWidth = Math.min(width * (width <= 700 ? 1.12 : .56), width <= 700 ? 560 : 780);
+          itemHeight = itemWidth * 260 / 700;
+        }
+        figures.forEach((node, index) => {
+          const depth = (index - current + frameDefs.length) % frameDefs.length;
+          const x = mixAt(xs, depth) * width;
+          const y = mixAt(ys, depth) * height;
+          const scale = mixAt(scales, depth);
+          const opacity = mixAt(opacities, depth);
+          node.style.transform = `translate3d(${(x - itemWidth / 2).toFixed(1)}px, ${(y - itemHeight / 2).toFixed(1)}px, 0) scale(${scale.toFixed(4)})`;
+          node.style.opacity = opacity.toFixed(3);
+          node.style.zIndex = String(20 - Math.round(depth * 2));
+        });
+        const lookIndex = Math.round(current) % frameDefs.length;
+        title.textContent = frameDefs[lookIndex].name;
+        number.textContent = `${String(lookIndex + 1).padStart(2, '0')} / ${String(frameDefs.length).padStart(2, '0')}`;
+        bar.style.width = `${(current / (frameDefs.length - 1) * 100).toFixed(1)}%`;
+        if (lookIndex !== previousLabel) {
+          announcement.textContent = `Estilo ${lookIndex + 1} de ${frameDefs.length}: ${frameDefs[lookIndex].name}`;
+          previousLabel = lookIndex;
+        }
+      }
+      function animate(now) {
+        if (!lastTime) lastTime = now;
+        const delta = Math.min(50, now - lastTime);
+        lastTime = now;
+        current += (target - current) * (1 - Math.exp(-delta * .012));
+        if (Math.abs(target - current) < .001) current = target;
+        paint();
+        if (current !== target) raf = requestAnimationFrame(animate);
+        else { raf = 0; lastTime = 0; }
+      }
+      stage.addEventListener('keydown', event => {
+        if (reduceMotion.matches) return;
+        const oneLook = (runway.offsetHeight - stage.clientHeight) / (frameDefs.length - 1);
+        if (['ArrowDown', 'ArrowRight'].includes(event.key)) { event.preventDefault(); window.scrollBy({ top: oneLook, behavior: reduceMotion.matches ? 'instant' : 'smooth' }); }
+        if (['ArrowUp', 'ArrowLeft'].includes(event.key)) { event.preventDefault(); window.scrollBy({ top: -oneLook, behavior: reduceMotion.matches ? 'instant' : 'smooth' }); }
+      });
+      window.addEventListener('scroll', measureScroll, { passive: true });
+      window.addEventListener('resize', () => { itemWidth = 0; itemHeight = 0; paint(); measureScroll(); });
+      reduceMotion.addEventListener?.('change', measureScroll);
+      if ('ResizeObserver' in window) new ResizeObserver(() => { paint(); measureScroll(); }).observe(stage);
+      paint(); measureScroll();
+
+      const revealItems = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window && !reduceMotion.matches) {
+        const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+          if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+        }), { threshold: .12 });
+        revealItems.forEach(item => observer.observe(item));
+      } else revealItems.forEach(item => item.classList.add('is-visible'));
+
+      const lottieContainer = document.getElementById('sapphire-lottie');
+      const gemAnimData = { v: '5.12.2', fr: 30, ip: 0, op: 48, w: 32, h: 32, nm: 'Brilho da safira', ddd: 0, assets: [], layers: [{ ddd: 0, ind: 1, ty: 4, nm: 'Safira lapidada', sr: 1, ks: { o: { a: 1, k: [{ i: { x: [.33], y: [1] }, o: { x: [.67], y: [0] }, t: 0, s: [32], e: [100] }, { i: { x: [.33], y: [1] }, o: { x: [.67], y: [0] }, t: 12, s: [100], e: [42] }, { i: { x: [.33], y: [1] }, o: { x: [.67], y: [0] }, t: 24, s: [42], e: [100] }, { t: 36, s: [100], e: [32] }] }, r: { a: 1, k: [{ i: { x: [.33], y: [1] }, o: { x: [.67], y: [0] }, t: 0, s: [-8], e: [8] }, { i: { x: [.33], y: [1] }, o: { x: [.67], y: [0] }, t: 24, s: [8], e: [-8] }, { t: 48, s: [-8] }] }, p: { a: 0, k: [16, 16, 0] }, a: { a: 0, k: [0, 0, 0] }, s: { a: 0, k: [100, 100, 100] } }, ao: 0, ef: [], shapes: [{ ty: 'gr', it: [{ d: 1, ty: 'sh', ks: { a: 0, k: { i: [[0, 0], [0, 0], [0, 0], [0, 0]], o: [[0, 0], [0, 0], [0, 0], [0, 0]], v: [[16, 2], [29, 14], [16, 30], [3, 14]], c: true } } }, { ty: 'fl', c: { a: 0, k: [.18, .42, .82] }, o: { a: 0, k: 100 }, r: 1 }, { ty: 'st', c: { a: 0, k: [.84, .92, 1] }, o: { a: 0, k: 100 }, w: { a: 0, k: 1.4 }, lc: 2, lj: 2 }, { ty: 'tr', p: { a: 0, k: [0, 0] }, a: { a: 0, k: [0, 0] }, s: { a: 0, k: [100, 100] }, r: { a: 0, k: 0 }, o: { a: 0, k: 100 }, sk: { a: 0, k: 0 }, sa: { a: 0, k: 0 } }] }], ip: 0, op: 48, st: 0, bm: 0 }] };
+      function startLottie() {
+        if (!window.lottie || reduceMotion.matches) return;
+        try { window.lottie.loadAnimation({ container: lottieContainer, renderer: 'svg', loop: false, autoplay: true, animationData: gemAnimData }); lottieContainer.classList.add('lottie-ready'); }
+        catch (_) { /* The inline SVG remains as a no-network fallback. */ }
+      }
+      if (window.lottie) startLottie(); else window.addEventListener('load', startLottie, { once: true });
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
